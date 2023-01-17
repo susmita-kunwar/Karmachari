@@ -28,8 +28,6 @@ a
 /* ============================= Hero section ============================= */
 .grid-container{
     height: 100%;
-    /* width: 100%; */
-    /* margin: 5px 0 0 15px; */
     background-color: #fff;
     display: grid;
     grid-template-columns: 350px 400px 300px;
@@ -184,12 +182,16 @@ div h3{
 .good{
     background-color: greenyellow;   
 }
-.atten{
+.atten-title{
+    display: flex;
     background-color: rgb(5, 5, 68);
     font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
     font-weight: bold;
     color: #fff;
-    padding: 1rem 0rem 0rem 1rem;
+    /* padding: 1rem 0rem 0rem 1rem; */
 }
 .A{
     margin: 1rem 0rem 1rem 0rem;
