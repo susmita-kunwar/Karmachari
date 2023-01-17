@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 /* ============================= Varibles ============================= */
 
 
@@ -7,12 +8,11 @@
 {
     padding: 0;
     margin: 0;
+    font-size: 1rem;
     /* box-sizing: border-box; */
 }
 body{
-    padding: 0px;
-    height: 100%;
-    margin: 0px;
+    font-family: 'poppins',sans-serif;
 }
 ul
 {
@@ -27,16 +27,19 @@ a
 
 /* ============================= Hero section ============================= */
 .grid-container{
-    height: 100%;
-    /* width: 100%; */
-    /* margin: 5px 0 0 15px; */
-    background-color: #fff;
+    height: 80%;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:white ;
     display: grid;
-    grid-template-columns: 350px 400px 300px;
-    grid-template-rows: 550px 1fr 140px;
-    margin: 2rem 0rem 0.5rem 18rem;  
-    column-gap: 2rem;
-    row-gap: 0.5rem
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 24%;
+    /*margin: 2rem 0;  margin le files align garnu bad Practise */
+    column-gap: 1rem;
+    row-gap: 1rem
 }
 .item {
     background-color: rgb(168, 228, 209);
@@ -52,39 +55,43 @@ a
     /* width: 50rem; */
     grid-column-start: 1;
     grid-column-end: 3;
-    /* margin: 3rem 0rem 0rem 17rem; */
-} 
-.flexbox-container{
-    height: 100%;
-    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 4;/*Hegight ko lagi khai fix gareko??
+    /* margin: 3rem 0rem 0rem 17rem;  17 rem margin reh hare ....hera hera*/ 
+    background-color: rgb(168, 228, 209);
     display: flex;  /*display: flex le same catogories ma matra kam garyo */
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    
 }
 .flexbox{
-    margin: 0.5rem;
-    justify-content: center;
-    
+    display: flex;
+    justify-content: center;  
+    align-items: center;
 } 
 
 .clock{
-    padding-top: 100px;
+    flex-direction: column;
+    /* padding-top: 100px; */
     font-size: 35px;
     font-weight: bold;
     height: 6%;
     width: 35%;
-    padding-left: 12rem;
+    /* padding-left: 12rem; */
     /* background-color: #fff;*/
 } 
+.clock h4
+{
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+}
 .watch{
-    height: 5%;
-    width: 38%;
-    font-size: 30px;
+
+    text-align: center;
+    width: 100%;
     font-weight: bold;
-    padding: 1rem 0rem 1rem 8rem;
+    padding: .5rem 1rem;
     border: 2px solid #fff;
     background-color: #fff; 
 }
@@ -104,9 +111,10 @@ div h3{
     padding: 0.5rem 2rem 1rem 4rem;
 }
 .left{
-    /* width:15rem ; */
-    /* margin: 3rem 5rem 0rem 0rem; */
-
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
 }
 .hh{
     
@@ -171,69 +179,65 @@ div h3{
     padding-left: 9rem;
     font-weight: bold;
 }
-.footer{
+.bottom
+{
+    display: flex;
+    justify-content: left;
     grid-column-start: 1;
     grid-column-end: 4;
-    /* background-color: rgb(117, 115, 106); */
-    /* margin: 1rem 5rem 1rem 17rem; */
-    display: grid;
-    grid-template-columns: 300px 240px 240px 240px; 
-    column-gap: 1.5rem;
-
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
-.good{
-    background-color: greenyellow;   
-}
-.atten{
+.atten-title{
+    display: flex;
     background-color: rgb(5, 5, 68);
-    font-size: 25px;
+    font-size: 1rem;
+    justify-self: left;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
     color: #fff;
-    padding: 1rem 0rem 0rem 1rem;
+    padding: 0 6%;
+}
+.footer{
+    /* background-color: rgb(117, 115, 106); */
+    /* margin: 1rem 5rem 1rem 17rem; */
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    flex-grow: 1;
+}
+.good{
+    background-color: greenyellow;
+    width: 30%; 
+    min-width: 0;  
+    margin: 1rem 0rem;
 }
 .A{
-    margin: 1rem 0rem 1rem 0rem;
-    height: 75%;
+    /* height: 75%; */
     background-color: rgb(242, 118, 118);
 }
 
-.A h4{
-    font-size: 25px;
+.atten-status{
+    font-size: 1.2rem;
     font-weight: bold;
     padding:  1rem 0rem 0rem 2rem;
     justify-content: flex-start;
+}
+.PP{
+    /* height: 75%; */
+    background-color: rgb(208, 230, 176);
 }
 .A div{
     padding-left: 9rem;
     font-weight: bold;
 }
-.PP{
-    margin: 1rem 0rem 1rem 0rem;
-    height: 75%;
-    background-color: rgb(208, 230, 176);
-}
 
-.PP h4{
-    font-size: 25px;
-    font-weight: bold;
-    padding:  1rem 0rem 0rem 2rem;
-    justify-content: flex-start;
-}
 .PP div{
-    padding-left: 9rem;
+    padding-left: 0;
     font-weight: bold;
-}
-.L{
-    margin: 1rem 0rem 1rem 0rem;
-    height: 75%;
 }
 
-.L h4{
-    font-size: 25px;
-    font-weight: bold;
-    padding:  1rem 0rem 0rem 2rem;
-    justify-content: flex-start;
-}
 .L div{
     padding-left: 9rem;
     font-weight: bold;
