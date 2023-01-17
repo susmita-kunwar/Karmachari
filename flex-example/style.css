@@ -197,7 +197,7 @@ div h3{
     align-items: center;
     font-weight: bold;
     color: #fff;
-    padding: 0 4rem;
+    padding: 0 6%;
 }
 .footer{
     /* background-color: rgb(117, 115, 106); */
@@ -209,10 +209,11 @@ div h3{
 }
 .good{
     background-color: greenyellow;
-    width: 30%;   
+    width: 30%; 
+    min-width: 0;  
+    margin: 1rem 0rem;
 }
 .A{
-    margin: 1rem 0rem;
     /* height: 75%; */
     background-color: rgb(242, 118, 118);
 }
@@ -223,23 +224,18 @@ div h3{
     padding:  1rem 0rem 0rem 2rem;
     justify-content: flex-start;
 }
+.PP{
+    /* height: 75%; */
+    background-color: rgb(208, 230, 176);
+}
 .A div{
     padding-left: 9rem;
     font-weight: bold;
 }
-.PP{
-    margin: 1rem 0rem 1rem 0rem;
-    /* height: 75%; */
-    background-color: rgb(208, 230, 176);
-}
 
 .PP div{
-    padding-left: 9rem;
+    padding-left: 0;
     font-weight: bold;
-}
-.L{
-    margin: 1rem 0rem 1rem 0rem;
-    /* height: 75%; */
 }
 
 .L div{
