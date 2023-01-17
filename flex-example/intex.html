@@ -11,19 +11,19 @@
 <body>
     <div class="grid-container">
         <div class="item right">
-            <div class="flexbox-container">
+            <!-- <div class="flexbox-container"> -->
                 <div class="flexbox clock"> 
                     <h4>Clock</h4>
+                    <div class="watch">
+                        <span id="hours">00</span>
+                        <span>:</span>
+                        <span id="minutes">00</span>
+                        <span>:</span>
+                        <span id="seconds">00</span> 
+                        <span id="session">AM</span>
+                    </div>
                 </div>
-                <div class="flexbox watch">
-                    <span id="hours">00</span>
-                    <span>:</span>
-                    <span id="minutes">00</span>
-                    <span>:</span>
-                    <span id="seconds">00</span> 
-                    <span id="session">AM</span>
-                </div>
-                    <div>
+                <div>
                         <h3>Total hrs Worked Today</h3>
                         <div class="flexbox works">       
                             <span id="hrs">00</span>
@@ -32,85 +32,76 @@
                             <span>:</span>
                             <span id="sec">00</span> 
                         </div>
-                    </div>
                 </div>
+                <!-- </div> -->
+        </div>
+        <div class="item left ">
+            <div class="hh">
+                <h4>Notices</h4>
             </div>
-                <div class="item left ">
-                    <div class="hh">
-                        <h4>Notices</h4>
+                <div class="boxes-content">
+                    <div class="content break">
+                        <h4>Breaks</h4>
+                        <div>2023/01/16
+                            </div>
                     </div>
-                    <div class="boxes-content">
-                        <div class="content break">
-                            <h4>Breaks</h4>
-                            <div>
-                                <span>2023</span>
-                                <span>/</span>
-                                <span>01</span>
-                                <span>/</span>
-                                <span>16</span>
-                                </div>
+                    <div class="content meet">
+                        <h4>Meeting</h4>
+                        <div>2023/01/17
                         </div>
-                        <div class="content meet">
-                            <h4>Meeting</h4>
-                            <div>
-                            <span>2023</span>
-                            <span>/</span>
-                            <span>01</span>
-                            <span>/</span>
-                            <span>17</span>
-                            </div>
                         </div>
-                        <div class="content holi">
-                            <h4>Holidays</h4>
-                            <div>
-                            <span>2023</span>
-                            <span>/</span>
-                            <span>01</span>
-                            <span>/</span>
-                            <span>18</span>
-                            </div>
+                    <div class="content holi">
+                        <h4>Holidays</h4>
+                        <div>
+                        <span>2023</span>
+                        <span>/</span>
+                        <span>01</span>
+                        <span>/</span>
+                        <span>18</span>
+                        </div>
                             
-                        </div>
-                    </div>
-                </div>   
-        <div class="item item1"></div>
-        <div class="item footer">
+                     </div>
+                </div>
+        </div>   
+        <div class="item bottom">
             <div class="atten-title">
                 <h4>Attendance <br> Records</h4>
             </div>
-            <div class="good A">
-                <h4>A</h4>
+            <div class="footer">
+                <div class="good A">
+                    <h4 class="atten-status">A</h4>
                             <div>
                             <span>2023</span>
                             <span>/</span>
                             <span>01</span>
                             <span>/</span>
                             <span>18</span>
-                            </div>
-            </div>
-            <div class="good PP">
-                <h4>P</h4>
+                        </div>
+                    </div>
+                    <div class="good PP">
+                        <h4 class="atten-status">P</h4>
+                        <div>
+                            <span>2023</span>
+                            <span>/</span>
+                            <span>01</span>
+                            <span>/</span>
+                            <span>18</span>
+                        </div>
+                    </div>
+                    <div class="good L">
+                <h4 class="atten-status">L</h4>
                             <div>
                             <span>2023</span>
                             <span>/</span>
                             <span>01</span>
                             <span>/</span>
                             <span>18</span>
-                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"></div>
             </div>
-            <div class="good L">
-                <h4>L</h4>
-                            <div>
-                            <span>2023</span>
-                            <span>/</span>
-                            <span>01</span>
-                            <span>/</span>
-                            <span>18</span>
-                            </div>
-            </div>
-        </div>
-        <div class="item"></div>
     </div>
-<script src="Script.js"></script>
+    <script src="Script.js"></script>
 </body>
 </html>
