@@ -21,7 +21,7 @@ ul
 a
 {
     text-decoration: none;
-    color: black;
+    color:var(--text-dark-color);
 }
 h3
 {
@@ -32,12 +32,12 @@ h3
 /* ============================= Hero section ============================= */
 .grid-container{
     height: 70%;
-    width: 57.5%;
+    width: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color:white ;
+    background-color:transparent;
     display: grid;
     grid-template-columns: 1fr 1fr 30%;
     grid-template-rows: 1fr 1fr 1fr 20%;
@@ -46,7 +46,7 @@ h3
     row-gap: 1rem
 }
 .item {
-    background-color: rgb(168, 228, 209);
+    background-color: var(--primary-color-alt);
     /* height: 100px;
     width: 200px; */
 }
@@ -61,7 +61,7 @@ h3
     grid-row-start: 1;
     grid-row-end: 4;/*Hegight ko lagi khai fix gareko??
     /* margin: 3rem 0rem 0rem 17rem;  17 rem margin reh hare ....hera hera*/ 
-    background-color: rgb(168, 228, 209);
+    background-color: var(--primary-color-alt);
     display: flex;  /*display: flex le same catogories ma matra kam garyo */
     flex-wrap: nowrap;
     flex-direction: column;
@@ -78,6 +78,8 @@ h3
     flex-direction: column;
     font-weight: bold;
     height: 40%;
+    color: var(--text-dark-color);
+
     width: 100%;
     /* padding-left: 12rem; */
     /* background-color: #fff;*/
@@ -99,6 +101,7 @@ h3
 .watch span
 {
     font-size: 1.75rem;
+    color: var(--text-dark-color);
 }
 .works{
     flex-direction: column;
@@ -126,7 +129,7 @@ h3
 .hh
 {
     height: 18%;
-    background-color: rgb(5, 5, 68);
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,7 +202,7 @@ h3
 }
 .atten-title{
     display: flex;
-    background-color: rgb(5, 5, 68);
+    background-color: var(--primary-color);
     font-size: 1rem;
     justify-self: left;
     justify-content: center;
@@ -216,7 +219,7 @@ h3
     flex-grow: 1;
 }
 .good-items{
-    background-color: aquamarine;
+    background-color: var(--Checkin);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -242,7 +245,7 @@ h3
 }
 .A
 {
-    background-color: rgb(221, 112, 112);
+    background-color: rgb(143, 99, 99);
 }
 .P
 {
