@@ -19,10 +19,16 @@ function display()
     if(hrs>12){
         hrs = hrs - 12;
     }
+    
     document.getElementById('hours').textContent = hrs;
-    document.getElementById('minutes').textContent = min;
-    document.getElementById('seconds').textContent = sec;
-
+    if(min<10)
+        document.getElementById('minutes').innerHTML='0'+ min
+    else
+        {document.getElementById('minutes').innerHTML= min}
+    if(sec<10)
+        {document.getElementById('seconds').innerHTML='0' + sec}
+    else
+        {document.getElementById('seconds').innerHTML=sec}
 }
 setInterval(display, 10);
 console.log(document.getElementById('seconds'))
