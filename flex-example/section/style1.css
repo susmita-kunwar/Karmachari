@@ -1,0 +1,101 @@
+/* =============================== Variables =========================== */
+
+/* ============================== GOlbal styling ======================= */
+*{
+    padding: 0rem;
+    margin: 0rem;
+    /* font-size: 1rem; */
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+    margin: 0rem;
+    
+}
+
+.hero-content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 14% 1fr 1fr 1fr 19%;
+    grid-template-rows: 14% 1fr 1fr 1fr 8%;
+    /* row-gap: 1rem;
+    column-gap: 1rem; */
+    
+}
+
+.hero{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-color: rgb(111, 237, 237);
+    
+    
+}
+.main{
+    display: grid;
+    grid-template-columns: 3% 35% 14% 1fr 7%;
+    grid-template-rows: 9% 8% 1fr 1fr 8% 13%;
+    /* column-gap: 2%; */
+    /* display: flex;
+    justify-content:space-between;
+    align-items: center; */
+    
+}
+.your{
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    /* background-color: rgb(86, 86, 214); */
+    /* border-end-start-radius: 16px solid black; */
+    
+}
+
+.user_info{
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2rem;
+    align-items: center;
+    background-color: rgb(179, 178, 176);
+}
+.user_info p{
+    height: 15%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: center;
+    /* background-color: rgb(231, 176, 105); */
+}
+
+.user-image{
+    height: 78%;
+    width: 95%;
+    border-radius: 48%;
+    background-color: rgb(152, 201, 185)
+    
+};
+   
+.user-info-details {
+    height: 15%;
+    width: 100%;
+    color: red;
+}
+
+.master-side{
+    /* height: 15%;
+    width: 30%; */
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: greenyellow;
+}
