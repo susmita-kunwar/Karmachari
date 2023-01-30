@@ -31,8 +31,7 @@ body{
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 5;
-    background-color: rgb(111, 237, 237);
-    
+    background-image: url('images/background.jpeg');
 }
 
 .main{
@@ -107,11 +106,58 @@ body{
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
 }
-.master-side form .user-info-details{
-    height: 100%;
+.master-side .user-info-details{
+    height: 87%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 2.5rem;
+    grid-template-columns: 4% 1fr 1fr 4%;
+    grid-template-rows: 4% 1fr 1fr 1fr 4%;
+    column-gap: 1rem;
     row-gap: 1rem;
+}
+
+span{
+    font-weight: bold;
+    font-size: 1rem;
+    
+}
+
+.inputbox input{
+    width: 100%;
+    height: 50%;
+}
+
+.name1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.name2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+.email{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+}
+
+.birth{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.dep{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
