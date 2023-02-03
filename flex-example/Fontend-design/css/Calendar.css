@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@600;800&display=swap');
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.container{
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas:
+    "nav nav"
+    "side-bar main";
+}
+
+.nav{
+    height: 30%;
+    width: 50%;
+    background-color: red;
+}
