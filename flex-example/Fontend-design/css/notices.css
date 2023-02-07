@@ -4,61 +4,53 @@
     padding: 0rem;
     margin: 0rem;
     border-radius: 0rem;
+    font-family: Poppins;
 }
 
 .container {
-    background-color: rgb(174, 243, 243);
-    height: fit-content;
-    align-content: space-between;
-    width: 85%;
-    position: absolute;
-    top: 13%;
-    left: 13%;
-    transform: translate(-40, -45);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    background-color: rgb(169, 232, 232);
+    height: 88vh;
+    width: 80%;
+    transform: translate(19%, 10%);
+    overflow: auto;
 }
 
 .top-nav {
-    height: 8%;
+    height: 3rem;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
 
-    /* background-color: blue; */
 }
 
 .top-nav h2 {
     font-size: 1.35rem;
     font-weight: bold;
-}
-
-.horizontal-line {
-    background-color: rgb(21, 21, 235);
-    height: 0.2%;
-    width: 99%;
-    margin: 0 3% 0 0.4%;
+    margin-left: 2%;
 }
 
 main {
-    height: 70%;
-    width: 93%;
     background-color: #ffffff;
-    margin-left: 1%;
-    margin-right: 2%;
-    border-radius: 5px;
-    padding-bottom: 2%;
-    
+    height: fit-content;
+    width: 96%;
+    transform: translate(2%, 1%);
+    /* overflow: auto; */
+
 }
+
+.horizontal-line {
+    background-color: rgb(45, 45, 224);
+    height: 0.4%;
+    margin: 0 0.2% 0 0.3%;
+}
+
 
 .view-notice {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 1% 0 1% 1%;
 
+    
 }
-
 .main-notice {
     width: 96%;
     height: 10%;
@@ -79,15 +71,19 @@ main {
 }
 
 .main-text {
-    padding-right: 2%;
+    padding-right: 1%;
 }
 
 .main-text-right {
-    padding-left: 3%;
+    padding-left: 1%;
+}
+
+.main-text-middle{
+    width: 6%;
 }
 
 .main-bottom {
-    width: 17%;
+    width: 10%;
     padding-right: 4%;
 }
 
@@ -111,78 +107,82 @@ main {
     padding: 12px 15px;
     font-size: 0.95rem;
     /* text-align: inherit; */
-    word-wrap: break-word;
-    overflow: hidden;
+    /* word-wrap: break-word;
+    overflow: hidden; */
 
-}
+    }
 
 .content-table tbody tr {
     border-bottom: 1px solid #dddddd;
 
 }
 
-.content-table tbody tr:nth-of-type(even) {
+.content-table tbody tr:nth-of-type(old) {
     background-color: #f3f3f3;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:650px) {
     .container {
-        height: fit-content;
-        width: 80%;
-        left: 13%; 
-        top: 10%;
-        transform: translate(-40, 10);
+        height: 88vh;
+        width: 91%;
+        transform: translate(5%, 5%);
+        overflow: auto;
     }
-
-    .content-table {
-        border-collapse: collapse;
-        margin: 3% 0 0 2%;
-    }
-
-    main {
-        height: fit-content;
-        bottom: 14%;
-        transform: translate(0,-10);
-        
-    }
-    .content-table th,
-    .content-table td {
-
-        padding: 8px 4px;
-        font-size: 0.75em;
-        /* font-weight: bold; */
-
-    }
-
 
     .top-nav {
-        height: 9%;
-        margin-bottom: 4;
+        height: 2rem;
         display: flex;
-        justify-content: center;
-        align-items: left;
-        /* background-color: blue; */
-    }
-
-    .top-nav h2 {
-        font-size: 1.4rem;
-        font-weight: bold;
-    }
-
-
-    .view-notice {
-        height: 7%;
-        font-size: 1.15rem;
-        display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
 
     }
-    .main-text{
+
+    .top-nav h2 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 2%;
+    }
+
+    main {
+        width: 96%;
+        transform: translate(1.5%, 0.9%);
+    }
+
+    .view-notice {
         font-size: 0.95rem;
     }
 
-    .main-text-right{
-        font-size: 0.95rem;
+    .main-header {
+        flex-grow: 1;
+        font-size: 0.78rem;
+    }
+
+    .main-text {
+        padding-right: 1.5%;
+    }
+    
+    .main-text-right {
+        padding-left: 2.6%;
+    }
+    
+    .main-text-middle{
+        width: 15%;
+    }
+    
+    .main-bottom {
+        width: 15%;
+        padding-right: 4%;
+    }
+    
+
+    .content-table th,
+    .content-table tr{
+
+        padding: 10px 7px;
+        font-size: 0.65rem;
+    }
+
+    .content-table td{
+        padding: 9px 5px;
     }
 }
