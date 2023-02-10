@@ -15,7 +15,7 @@
     height: 88vh;
     width: 80%;
     transform: translate(19%, 10%);
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .top-nav {
@@ -94,7 +94,7 @@ main {
 
 .content-table {
     border-collapse: collapse;
-    width: fit-content;
+    width: 95%;
     height: 70%;
     margin: 0% 2% 0 1%;
 }
@@ -161,7 +161,7 @@ a:hover {
 @media screen and (max-width:650px) {
     .container {
         height: 88vh;
-        width: 91%;
+        width: fit-content;
         transform: translate(5%,5%);
         overflow: auto;
     }
@@ -227,6 +227,8 @@ a:hover {
         transform: translateX(0.25%);
 
     }
+
+    /* this is me */
 
     
 }
