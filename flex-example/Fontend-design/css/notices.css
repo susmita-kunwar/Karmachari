@@ -7,16 +7,23 @@
     font-family: Poppins;
 }
 
-.container {
+body {
+    height: 100vh;
+}
+
+.container-fluid {
     background-color: rgb(169, 232, 232);
-    height: 88vh;
-    width: 80%;
-    transform: translate(19%, 10%);
-    overflow: auto;
+    top: 7%;
+    left: 19%;
+    height: 93%;
+    width: 81%;
+    position: fixed;
 }
 
 .top-nav {
-    height: 3rem;
+    height: 10%;
+    width: 95%;
+    /* background-color: red; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -24,7 +31,7 @@
 }
 
 .top-nav h2 {
-    font-size: 1.35rem;
+    font-size: 1.9rem;
     font-weight: bold;
     margin-left: 2%;
 }
@@ -34,7 +41,6 @@ main {
     height: fit-content;
     width: 96%;
     transform: translate(2%, 1%);
-    /* overflow: auto; */
 
 }
 
@@ -46,11 +52,12 @@ main {
 
 
 .view-notice {
-    font-size: 1.1rem;
+    font-size: 1.45rem;
     padding: 1% 0 1% 1%;
 
-    
+
 }
+
 .main-notice {
     width: 96%;
     height: 10%;
@@ -66,8 +73,13 @@ main {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    font-size: 1rem;
+    font-size: 1.19rem;
     /* justify-content: space-evenly; */
+}
+
+.main-notice {
+    /* background-color: #009879; */
+    width: 96.9%;
 }
 
 .main-text {
@@ -78,13 +90,15 @@ main {
     padding-left: 1%;
 }
 
-.main-text-middle{
-    width: 6%;
+.main-text-middle {
+    width: 4%;
+    font-size: 1.2rem;
 }
 
 .main-bottom {
     width: 10%;
-    padding-right: 4%;
+    font-size: 1.2rem;
+    align-items: center;
 }
 
 
@@ -104,85 +118,138 @@ main {
 .content-table th,
 .content-table tr {
 
-    padding: 12px 15px;
-    font-size: 0.95rem;
-    /* text-align: inherit; */
-    /* word-wrap: break-word;
-    overflow: hidden; */
+    padding: 13px 15px;
+    font-size: 1.5rem;
+}
 
-    }
+.content-table td {
+
+    padding: 13px 15px;
+    font-size: 1.5rem;
+}
 
 .content-table tbody tr {
     border-bottom: 1px solid #dddddd;
 
 }
 
-.content-table tbody tr:nth-of-type(old) {
+.content-table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
 
+@media screen and (max-width:950px) {
+   
+
+    .content-table th,
+    .content-table tr {
+
+        padding: 13px 10px;
+        font-size: 1.15rem;
+    }
+
+    .content-table td {
+        padding: 13px 10px;
+        font-size: 1.15rem;
+    }
+    
+}
+
+@media screen and (max-width:715px) {
+   
+
+    .content-table th,
+    .content-table tr {
+
+        padding: 13px 8px;
+        font-size: 1.1rem;
+    }
+
+    .content-table td {
+        padding: 13px 8px;
+        font-size: 1.1rem;
+    }
+    
+}
+
 @media screen and (max-width:650px) {
-    .container {
-        height: 88vh;
-        width: 91%;
-        transform: translate(5%, 5%);
-        overflow: auto;
+    body {
+        width: 100%;
+    }
+
+    .container-fluid {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 3%;
     }
 
     .top-nav {
-        height: 2rem;
+        height: 6%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
 
     }
 
     .top-nav h2 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: bold;
         margin-left: 2%;
     }
 
     main {
         width: 96%;
-        transform: translate(1.5%, 0.9%);
+        height: fit-content;
+        left: 0;
     }
 
     .view-notice {
-        font-size: 0.95rem;
+        font-size: 0.93rem;
+        margin: 2% 0 2% 0;
+        text-align: center;
+        width: 97%;
+        /* background-color: blue; */
+
     }
 
     .main-header {
         flex-grow: 1;
-        font-size: 0.78rem;
+        /* font-size: 0.8rem; */
     }
 
     .main-text {
         padding-right: 1.5%;
+        font-size: 0.8rem;
     }
-    
+
     .main-text-right {
-        padding-left: 2.6%;
+        font-size: 0.8rem;
     }
-    
-    .main-text-middle{
+
+    .main-text-middle {
         width: 15%;
+        font-size: 0.8rem;
     }
-    
+
+
     .main-bottom {
         width: 15%;
-        padding-right: 4%;
+        font-size: 0.7rem;
     }
-    
+
+    .content-table {
+        height: fit-content;
+    }
 
     .content-table th,
-    .content-table tr{
+    .content-table tr {
 
-        padding: 10px 7px;
-        font-size: 0.65rem;
+        padding: 10px 4.7px;
+        font-size: 0.75rem;
     }
 
-    .content-table td{
-        padding: 9px 5px;
+    .content-table td {
+        padding: 9px 4.7px;
+        font-size: 0.65rem;
     }
 }
