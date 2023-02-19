@@ -31,7 +31,7 @@ body {
 }
 
 .top-nav h2 {
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-left: 2%;
 }
@@ -39,9 +39,9 @@ body {
 main {
     background-color: #ffffff;
     height: fit-content;
-    width: 96%;
-    transform: translate(2%, 1%);
-
+    width: 97%;
+    margin-left: 2%;
+   
 }
 
 .horizontal-line {
@@ -52,7 +52,8 @@ main {
 
 
 .view-notice {
-    font-size: 1.45rem;
+    font-size: 1.9rem;
+    font-weight: 300;
     padding: 1% 0 1% 1%;
 
 
@@ -73,7 +74,7 @@ main {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    font-size: 1.19rem;
+    font-size: 1.5rem;
     /* justify-content: space-evenly; */
 }
 
@@ -91,14 +92,15 @@ main {
 }
 
 .main-text-middle {
-    width: 4%;
-    font-size: 1.2rem;
+    width: 5%;
+    font-size: 1.35rem;
 }
 
 .main-bottom {
     width: 10%;
-    font-size: 1.2rem;
-    align-items: center;
+    font-size: 1.35rem;
+    text-align: center;
+    
 }
 
 
@@ -174,13 +176,14 @@ main {
 @media screen and (max-width:650px) {
     body {
         width: 100%;
+        padding: 0px;
+        margin: 0px;
     }
 
     .container-fluid {
         height: 100%;
         width: 100%;
         left: 0;
-        top: 3%;
     }
 
     .top-nav {
@@ -192,19 +195,19 @@ main {
     }
 
     .top-nav h2 {
-        font-size: 1.1rem;
+        font-size: 1.35rem;
         font-weight: bold;
         margin-left: 2%;
     }
 
     main {
-        width: 96%;
+        width: 100%;
         height: fit-content;
-        left: 0;
+        margin-left: 0.6%;
     }
 
     .view-notice {
-        font-size: 0.93rem;
+        font-size: 1.15rem;
         margin: 2% 0 2% 0;
         text-align: center;
         width: 97%;
@@ -219,22 +222,22 @@ main {
 
     .main-text {
         padding-right: 1.5%;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .main-text-right {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .main-text-middle {
         width: 15%;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
 
     .main-bottom {
         width: 15%;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .content-table {
@@ -244,12 +247,12 @@ main {
     .content-table th,
     .content-table tr {
 
-        padding: 10px 4.7px;
-        font-size: 0.75rem;
+        padding: 10px 4px;
+        font-size: 0.95rem;
     }
 
     .content-table td {
-        padding: 9px 4.7px;
-        font-size: 0.65rem;
+        padding: 9px 4px;
+        font-size: 0.75rem;
     }
 }
