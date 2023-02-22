@@ -34,13 +34,13 @@
 
 }
 
-#top-head{
-    /* background: red; */
+/* #top-head{
+    background: red;
     margin-top: 4px;
     height: 35px;
     width: 100%;
     
-}
+} */
 
 
 .horizontal-line{
@@ -48,6 +48,14 @@
     background-color: #cfc4c4;
     padding: 0px;
     margin: 0px;
+
+}
+.horizontal-line2{
+    background-color: #d0c2c2;
+    height: 1%;
+    margin-top: 0%;
+    width: 100%;
+
 
 }
 
