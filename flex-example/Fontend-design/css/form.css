@@ -8,7 +8,7 @@
     box-sizing: border-box;
     font-family: poppins;
 }
-body{
+    body{
     height: 1000%;
     width: 100%;
     background-color: aquamarine;
@@ -20,6 +20,25 @@ body{
     position: absolute;
     left: 19%;
     top: 7%;
+    
+}
+.horizontal-line1{
+    /* height: 1%; */
+    background-color: rgb(11, 11, 154);
+    margin: 0%;
+    padding-top: 0.3%;
+    position: absolute;
+    width: 100%;
+    left:0%;
+    top: 0%;
+
+}
+
+#top-head{
+    /* background: red; */
+    margin-top: 4px;
+    height: 35px;
+    width: 100%;
     
 }
 
