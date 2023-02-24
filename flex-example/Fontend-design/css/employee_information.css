@@ -1,0 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 93%;
+    width: 81%;
+    position: absolute;
+    top: 7%;
+    left: 19%;
+
+}
+
+main{
+    height: 80%;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    overflow: scroll;
+
+}
+
+.emp-details{
+    font-size: 1.85rem;
+}
+
+.employee{
+    font-size: 1.15rem;
+}
+
