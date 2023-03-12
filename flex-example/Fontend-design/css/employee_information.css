@@ -35,4 +35,9 @@ main{
 .employee{
     font-size: 1.15rem;
 }
-
+.title_info
+{
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+}

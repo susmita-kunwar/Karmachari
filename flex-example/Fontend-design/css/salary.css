@@ -23,7 +23,6 @@ body {
     left: 19%;
     top: 7%;
     position: absolute;
-    overflow: auto;
 }
 
 .top-nav {
@@ -58,7 +57,7 @@ main {
 
 
 .view-notice {
-    font-size: 1.55rem;
+    font-size: 1.35rem;
     width: 98.8%;          
     height: 5%;
     margin: 1% 0 0 1%;
@@ -85,12 +84,12 @@ main {
     align-items: center;
     flex-grow: 1;
     /* background-color: #04AA6D; */
-    font-size: 1.45rem;
+    font-size: 1.15rem;
 
 }
 
 .main-text {
-    width: 5%;
+    width: 6%;
     /* background-color: red; */
 }
 
@@ -102,9 +101,9 @@ main {
 
 .main-text-middle {
     background-color: antiquewhite;
-    height: 50%;
-    width: 6%;
-    font-size: 1.5rem;
+    /* height: 50%; */
+    width: 4%;
+    font-size: 1rem;
 }
 
 .main-bottom {
@@ -112,14 +111,15 @@ main {
     margin-right: 1%;
     height: 50%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 2%;
     background-color: antiquewhite;
 }
 
 
 .content-table {
     border-collapse: collapse;
-    height: 90%;
+    height: fit-content;
     width: 100%;
     text-align: center;
 }
@@ -137,7 +137,7 @@ main {
     padding: 15px 12px;
     text-align: center;
     border: 1px solid #ddd;
-    font-size: 1.35rem;
+    font-size: 0.95rem;
     /* background-color: antiquewhite; */
 
 }
