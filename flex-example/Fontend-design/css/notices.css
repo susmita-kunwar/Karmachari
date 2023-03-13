@@ -41,30 +41,30 @@ main {
     background-color: #ffffff;
     height: 90%;
     width: 97.5%;
-    margin-left: 1%;
-   
+    margin-left: 1%; 
 }
 
 .horizontal-line {
     background-color: rgb(45, 45, 224);
     height: 0.4%;
-    margin: 0 0.2% 0 0.3%;
+    margin: 0 0.2% 0 0.2%;
 }
 
-
-.view-notice {
-    height: 5%;
-    padding: 1% 0 0 1%;
-    width: 100%;
-    font-size: 1.2rem;
+.view-notice{
+    height: 7%;
+    display: flex;
+    align-items: center;
+    width: 98%;
+    font-weight: 300;
+    font-size: 1.18rem;
+    padding-left: 2%;
     
-
 }
 
 .main-notice {
     width: 96%;
-    height: 10%; 
-    padding: 0 1% 0 1%;
+    height: 8%; 
+    padding: 0 1% 0 2%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -95,12 +95,12 @@ main {
 
 .main-text-middle {
     width: 5%;
-    font-size: 1.15rem;
+    font-size: 0.98rem;
 }
 
 .main-bottom {
     width: 10%;
-    font-size: 1.15rem;
+    font-size: 0.98rem;
     text-align: center;
     
 }
@@ -144,7 +144,7 @@ main {
 .content-table td {
 
     padding: 13px 15px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 .content-table tbody tr {
@@ -155,45 +155,6 @@ main {
 .content-table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
-
-@media screen and (max-width:950px) {
-   
-
-    .content-table th,
-    .content-table tr {
-
-        padding: 13px 10px;
-        font-size: 1.15rem;
-    }
-
-    .content-table td {
-        padding: 13px 10px;
-        font-size: 1.15rem;
-    }
-    
-}
-
-@media screen and (max-width:715px) {
-   
-
-    .content-table th,
-    .content-table tr {
-
-        padding: 13px 8px;
-        font-size: 1.1rem;
-    }
-
-    .content-table td {
-        padding: 13px 8px;
-        font-size: 1.1rem;
-    }
-    
-}
-/* .table-holder
-{
-    overflow: scroll;
-    height: 600px;
-} */
 
 @media screen and (max-width:650px) {
     body {
@@ -209,22 +170,26 @@ main {
     }
 
     .top-nav {
-        height: 6%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 8%;
+        width: 100%;
 
     }
 
     .top-nav h2 {
+        height: 80%;
         font-size: 1.35rem;
+        display: flex;
+        justify-content: left;
+        align-items: center;
         font-weight: bold;
-        margin-left: 2%;
+        margin: 0;
+        padding-left: 2%;
+        width: 98%;
     }
 
     main {
         width: 100%;
-        height: fit-content;
+        height: 80%;
         margin-left: 0.6%;
     }
 
@@ -263,18 +228,18 @@ main {
     }
 
     .content-table {
-        height: fit-content;
+        height: 60%;
     }
 
     .content-table th,
     .content-table tr {
 
         padding: 10px 4px;
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .content-table td {
         padding: 9px 4px;
-        font-size: 0.75rem;
+        font-size: 0.85rem;
     }
 }
