@@ -17,11 +17,12 @@ body
 
 .container {
     position: fixed;
-    top: 7%;
+    top: 9%;
     left: 15%;
     background-color: rgb(169, 232, 232);
     width: 84.5%;
     height: 92%;
+    /* position: absolute; */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -30,17 +31,17 @@ body
 }
 
 .top-nav {
-    height:8%;
+    height:10%;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: end;
 
 }
 
 .top-nav h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-left: 2%;
 }
@@ -60,16 +61,17 @@ main {
 
 
 .view-notice {
-    font-size: 1.9rem;
+    font-size: 1.35rem;
     padding: 1% 0 1% 1%;
 
 
 }
 
 .main-notice {
-    width: 96%;
+    width: 95%;
     height: 10%;
-    margin: 0 1% 0 1%;
+    /* background-color: yellow; */
+    margin: 0 0 0 1%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -81,67 +83,106 @@ main {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    font-size: 1.5rem;
+    background-color: green;
+    
+    font-size: 1.2rem;
     /* justify-content: space-evenly; */
 }
 
 .main-text {
-    padding-right: 1%;
+    width: 7%;
+    /* background-color: red; */
 }
 
 .main-text-right {
-    padding-left: 1%;
+    width: 9%;
+    padding-left: 1.5%;
+    /* background-color: red; */
 }
 
 .main-text-middle {
-    width: 4.5%;
-    font-size: 1.5rem;
+    width: 6%;
+    font-size: 1.15rem;
     cursor: pointer;
+    /* background-color: yellow; */
 }
 
 .main-text-middle:hover{
     background-color: #ddd;
+    color:black;
+    transition-delay: 0.9s;
+}
+
+.main-bottom {
+    width: 15%;
+    /* background-color: red; */
+    margin-right: 1%;
+    font-size: 1.15rem;
+    text-align: center;
     color: black;
+    cursor: pointer;
+}
+
+.main-bottom:hover{
+    background-color: #ddd;
+    color:black;
     transition-delay: 0.9s;
 
 }
 
-
-.main-bottom {
-    width: 9%;
-    /* background-color: red; */
-    margin-right: 1%;
-    font-size: 1.5rem;
-    text-align: center;
-    color: black;
+.table-holder{
+    height: 75%;
+    width: 100%;
+    /* background-color: yellow; */
+    top: 0;
+    position: relative;
+    overflow: scroll;
 }
-
 
 .content-table {
+    width: 100%;
     border-collapse: collapse;
-    width: 95%;
-    height: fit-content;
-    margin: 0% 2% 0 1%;
-}
+    /* background-color: red; */
+    position: relative;
+  }
+  
+  .content-table thead th{
+    background-color: #009879;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 13px 15px;
+    font-size: 0.95rem;
+  }
 
 .content-table thead tr {
-    background-color: #009879;
+    /* background-color: #009879; */
     color: #ffffff;
     text-align: left;
     font-weight: bold;
 }
 
-.content-table tr,
-.content-table th,
+
+
 .content-table td {
-    font-size: 1.35rem;
-    padding: 18px 0px;
-    text-align: center;
-    padding-bottom: 1rem;
+
+    padding: 13px 15px;
+    font-size: 0.95rem;
+}
+
+.content-table tr:hover{
+    background-color: #ddd;
+    color: black;
+    transition-delay: 0.1s;
 }
 
 .content-table tbody tr {
     border-bottom: 1px solid #dddddd;
+    /* background-color: red; */
 
 }
 
@@ -182,8 +223,8 @@ a:hover {
 
 .round {
     border-radius: 50%;
-    width: 3%;
-    font-size: 3rem;
+    width: 3.2%;
+    font-size: 1.95rem;
     text-align: center;
     height: 70%;
 }

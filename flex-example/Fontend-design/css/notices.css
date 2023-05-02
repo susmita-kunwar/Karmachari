@@ -54,7 +54,7 @@ main {
     height: 7%;
     display: flex;
     align-items: center;
-    width: 98%;
+   width: 98%;
     font-weight: 300;
     font-size: 1.18rem;
     padding-left: 2%;
@@ -156,11 +156,12 @@ main {
     background-color: #f3f3f3;
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:900px) {
     body {
         width: 100%;
         padding: 0px;
         margin: 0px;
+        display: none;
     }
 
     .container-fluid {
@@ -168,6 +169,13 @@ main {
         width: 100%;
         left: 0;
     }
+    .horizontal-line {
+        background-color: rgb(45, 45, 224);
+        height: 0.4%;
+        margin: 0 0% 0 0.1%;
+        width: 98.8%;
+    }
+    
 
     .top-nav {
         height: 8%;
@@ -235,11 +243,11 @@ main {
     .content-table tr {
 
         padding: 10px 4px;
-        font-size: 1rem;
+        font-size: 0.98rem;
     }
 
     .content-table td {
         padding: 9px 4px;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 }
